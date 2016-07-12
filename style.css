@@ -1,4 +1,8 @@
 * {margin:0;}
+@font-face {
+    font-family: Sa; /* Гарнитура шрифта */
+    src: url(font/ShellyAllegro.ttf); /* Путь к файлу со шрифтом */
+}
 
 body{
     background-color: #59271B;
@@ -7,7 +11,7 @@ body{
     position: relative;
     top: 35px;
     display: block;
-    width: 900px;
+    width: 1000px;
     height: 266px;
     margin: 0 auto;
 }
@@ -51,17 +55,42 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     width: auto;
+    font-size: 1.2em;
 }
 
 .main {
     background-color: #E5D4C4;
     display: block;
-    width: 900px;
+    width: 1000px;
     height: 866px;
     margin: 0 auto;
     margin-top: -60px;
     border: 3px solid white;
     box-shadow: 2px 4px 8px ;
     border-radius: 10px;
-
+}
+.main img {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 45%;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+.named {
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    top: -100px;
+    font-size: 85px;
+    font-weight: bold;
+    /*font-family: 'Lobster', arial, serif;*/
+    font-family: Sa;
+    color: darkblue;
+}
+.salon{
+    top: -100px;
+    font-size: 45px;
+    left: 600px;
+    color: darkblue;
 }
