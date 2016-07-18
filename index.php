@@ -84,8 +84,8 @@
     $('.top_button_3').click(function(){
         $('body,html').animate({scrollTop: 900},800); return false;
     });
-    $('.price').click(function(){
-        $('body,html').animate({scrollTop: 8500},1500); return false;
+    $('.top_button_4').click(function(){
+        window.open("works.php", '_self');
     });
     $('.button-close').click(function(){
         $('.discount').removeClass('vision');
