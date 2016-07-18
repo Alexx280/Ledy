@@ -87,7 +87,7 @@ body{
     box-shadow: 2px 4px 8px ;
     border-radius: 10px;
 }
-.main img {
+.main .face {
     position: relative;
     top: 20px;
     left: 20px;
@@ -164,15 +164,16 @@ body{
 }
 .fon-bottom {
     position: relative;
-    margin-top: -200px;
+    margin-top: -70px;
+    margin-left: -170px;
     width: 500px;
 }
 
 .fon-right {
     display: block;
     position: relative;
-    margin-top: -280px;
-    right: 10px;
+    margin-top: 0;
+    left: 850px;
     width: 450px;
 }
 .fon-right img{

@@ -33,7 +33,7 @@
         <img src="png/fon02.png"/>
     </div>
     <div class="main">
-        <img src="pic/foto2.jpg"/>
+        <img class="face" src="pic/foto2.jpg"/>
         <div class="named">Леди Ди</div>
         <div class="named salon">Салон красоты</div>
         <!--<div class="adress">Адрес салона: <br> г. Томск, проспект Фрунзе, 129 <br> тел.: 256-296, 8-961-095-6970 </div>-->
@@ -58,17 +58,19 @@
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=DyJCZRn5MeAN_ZM1e1HeJX96G79l31CK&width=615&height=388&lang=ru_RU&sourceType=constructor&scroll=true"></script>
             <div class="adress">Адрес салона: г. Томск, проспект Фрунзе, 129 <br> тел.: 256-296, 8-961-095-6970 </div>
         </div>
+        <div class="fon-right">
+            <img src="png/fon05.png"/>
+        </div>
+        <div class="fon-bottom">
+            <img src="png/fon01.png"/>
+        </div>
     </div>
     <div class="footer">
         &copy; Разработка и поддержка сайта <a href="http://alexeybusygin.ru" style="text-decoration: none; color: #ffffff">Бусыгин Алексей <img src="pic/Contact-16.png"/></a>
     </div>
-    <div class="fon-bottom">
-        <img src="png/fon01.png"/>
-    </div>
+
     <!--
-    <div class="fon-right">
-            <img src="png/fon05.png"/>
-    </div>
+
     -->
 </body>
 
