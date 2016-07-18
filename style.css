@@ -162,3 +162,20 @@ body{
     font-size: 1.3em;
     margin: 0 auto;
 }
+.fon-bottom {
+    position: relative;
+    margin-top: -200px;
+    width: 500px;
+}
+
+.fon-right {
+    display: block;
+    position: relative;
+    margin-top: -280px;
+    right: 10px;
+    width: 450px;
+}
+.fon-right img{
+    transform: rotate(270deg);
+    width: 80%;
+}

@@ -62,13 +62,16 @@
     <div class="footer">
         &copy; Разработка и поддержка сайта <a href="http://alexeybusygin.ru" style="text-decoration: none; color: #ffffff">Бусыгин Алексей <img src="pic/Contact-16.png"/></a>
     </div>
-
-</body>
-<footer>
-    <div>
-
+    <div class="fon-bottom">
+        <img src="png/fon01.png"/>
     </div>
-</footer>
+    <!--
+    <div class="fon-right">
+            <img src="png/fon05.png"/>
+    </div>
+    -->
+</body>
+
 <script>
     $('.top_button_1').click(function(){
         $('body,html').animate({scrollTop: 0},800); return false;
