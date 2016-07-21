@@ -40,9 +40,13 @@
 <div class="fon">
     <img src="png/fon02.png"/>
 </div>
-<div class="main">
-    <img class="examples" src="pic/examples/01.jpg"/>
-    <img class="examples" src="pic/examples/02.jpg"/>
+<div class="main works">
+    <img class="examples" src="pic/examples/Manicure/01.jpg"/>
+    <img class="examples" src="pic/examples/Manicure/02.jpg"/>
+    <img class="examples" src="pic/examples/Manicure/03.jpg"/>
+    <img class="examples" src="pic/examples/Manicure/04.jpg"/>
+    <img class="examples" src="pic/examples/Manicure/05.jpg"/>
+    <img class="examples" src="pic/examples/Manicure/06.jpg"/>
 
 
 </div>
@@ -64,10 +68,12 @@
     });
     $('.top_button_3').click(function(){
         /*window.open("index.php", '_self');*/
-        var newWin = window.open("index.php#section", '_self');
-        newWin.$('body,html').animate({scrollTop: 900},800);
+        var newWin = window.open("index.php", '_self');
+        newWin.ready(function(){document.window.$('body,html').animate({scrollTop: 900},800);});
+        newWin.ready(function(){document.window.scrollBy(100,100)});
         setTimeout(newWin.document.window.scrollBy(100,100),2000);
         setTimeout(newWin.document.window.animate({scrollTop: 900},800),2000);
+        $("document").ready(function(){});
 
         /*$('body,html').animate({scrollTop: 900},800); return false;*/
     });

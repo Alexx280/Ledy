@@ -6,6 +6,7 @@
 
 body{
     background-color: #59271B;
+    /*background-image: url("pic/bg5.jpg");*/
 }
 .fon img{
     position: relative;
@@ -181,5 +182,13 @@ body{
     width: 80%;
 }
 .examples {
-    height: 150px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.works {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

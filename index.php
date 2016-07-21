@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="head">
-        <div class="top_button tel">8-923-420-15-08
+        <div class="top_button tel">8-923-457-15-08
             <div class="phone">
                 тел.: 256-296, <br> 8-961-095-6970
             </div>
