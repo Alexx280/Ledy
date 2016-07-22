@@ -25,7 +25,13 @@
         <div class="top_button top_button_1">Главная</div>
         <div class="top_button top_button_2">Услуги</div>
         <div class="top_button top_button_3">Адрес</div>
-        <div class="top_button top_button_4">Наши работы</div>
+        <div class="top_button top_button_4">Наши работы
+            <div class="our_work">
+                <div class="we_do hairstyles">Причёски</div>
+                <div class="we_do makeup">Макияж</div>
+                <div class="we_do manicure">Маникюр</div>
+            </div>
+        </div>
         <div class="top_button top_button_5">О Нас</div>
     </div>
 
@@ -58,6 +64,38 @@
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=DyJCZRn5MeAN_ZM1e1HeJX96G79l31CK&width=615&height=388&lang=ru_RU&sourceType=constructor&scroll=true"></script>
             <div class="adress">Адрес салона: г. Томск, проспект Фрунзе, 129 <br> тел.: 256-296, 8-961-095-6970 </div>
         </div>
+        <script>
+            $('.manicure').click(function(){
+                $('.price').html('<div class="works">'+
+                '<img class="examples" src="pic/examples/Manicure/01.jpg"/>'+
+                '<img class="examples" src="pic/examples/Manicure/02.jpg"/>'+
+                '<img class="examples" src="pic/examples/Manicure/03.jpg"/>'+
+                '<img class="examples" src="pic/examples/Manicure/04.jpg"/>'+
+                '<img class="examples" src="pic/examples/Manicure/05.jpg"/>'+
+                '<img class="examples" src="pic/examples/Manicure/06.jpg"/>'+
+                '</div>');
+                $('body,html').animate({scrollTop: 600},1200); return false;
+            });
+            $('.top_button_2').click(function(){
+                $('.price').html("<p style='text-align: center'>Услуги:</p> " +
+                "<ul>"+
+                "<li>Стрижка женская от 350 руб.</li>"+
+                "<li>Стрижка мужская от 150 руб.</li>"+
+                "<li>Стрижка детская от 150 руб.</li>"+
+                "<li>Химическая завивка волос от 1000 руб.</li>"+
+                "<li>Визаж от 800 руб.</li>"+
+                "<li>Хаэрс тату от 400 руб.</li>"+
+                "<li>Лечение волос от 800 руб</li>"+
+                "<li>Оформление и покраска бровей от 150 руб.</li>"+
+                "<li>Маникюр от 300руб.</li>"+
+                "<li>Педикюр от 1000 руб.</li>"+
+                "<li></li>"+
+                "</ul>");
+            });
+
+        </script>
+
+
         <div class="fon-right">
             <img src="png/fon05.png"/>
         </div>
@@ -84,9 +122,9 @@
     $('.top_button_3').click(function(){
         $('body,html').animate({scrollTop: 900},800); return false;
     });
-    $('.top_button_4').click(function(){
+    /*$('.manicure').click(function(){
         window.open("works.php", '_self');
-    });
+    });*/
     $('.button-close').click(function(){
         $('.discount').removeClass('vision');
     });

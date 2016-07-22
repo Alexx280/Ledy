@@ -69,11 +69,13 @@
     $('.top_button_3').click(function(){
         /*window.open("index.php", '_self');*/
         var newWin = window.open("index.php", '_self');
-        newWin.ready(function(){document.window.$('body,html').animate({scrollTop: 900},800);});
-        newWin.ready(function(){document.window.scrollBy(100,100)});
-        setTimeout(newWin.document.window.scrollBy(100,100),2000);
-        setTimeout(newWin.document.window.animate({scrollTop: 900},800),2000);
-        $("document").ready(function(){});
+        newWin.onload(function(){newWin.ready(function(){newWin.scrollBy(500,500)})});
+        newWin.onload(function(){newWin.ready(function(){$('body,html').animate({scrollTop: 500},800); return false;})});
+       /* newWin.ready(function(){newWin.scrollBy(500,500)});
+        newWin.onload(function(){newWin.$('body,html').animate({scrollTop: 500},800); return false;});
+        newWin.ready(function(){$('body,html').animate({scrollTop: 500},800); return false;});*/
+
+
 
         /*$('body,html').animate({scrollTop: 900},800); return false;*/
     });
