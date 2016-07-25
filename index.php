@@ -40,8 +40,10 @@
     </div>
     <div class="main">
         <img class="face" src="pic/foto2.jpg"/>
-        <div class="named">Леди Ди</div>
-        <div class="named salon">Салон красоты</div>
+        <div class="named">Леди Ди <br>
+            <p style=" font-size: 45px; text-align: center">Салон красоты</p>
+        </div>
+        <!--<div class="named salon">Салон красоты</div>
         <!--<div class="adress">Адрес салона: <br> г. Томск, проспект Фрунзе, 129 <br> тел.: 256-296, 8-961-095-6970 </div>-->
         <div class="time">Мы работаем: <br> Понедельник - Пятница: 9:00 - 21:00 <br> Суббота - Воскресенье: 10:00 - 20:00</div>
         <div class="price">
@@ -74,7 +76,34 @@
                 '<img class="examples" src="pic/examples/Manicure/05.jpg"/>'+
                 '<img class="examples" src="pic/examples/Manicure/06.jpg"/>'+
                 '</div>');
-                $('body,html').animate({scrollTop: 600},1200); return false;
+                $('body,html').animate({scrollTop: 500},1200); return false;
+            });
+            $('.makeup').click(function(){
+                $('.price').html('<div class="works">'+
+                '<img class="examples" src="pic/examples/Makeup/07.jpg"/>'+
+                '<img class="examples" src="pic/examples/Makeup/02.jpg"/>'+
+                '<img class="examples" src="pic/examples/Makeup/03.jpg"/>'+
+                '<img class="examples" src="pic/examples/Makeup/04.jpg"/>'+
+                '<img class="examples" src="pic/examples/Makeup/05.jpg"/>'+
+                '<img class="examples" src="pic/examples/Makeup/06.jpg"/>'+
+                '</div>');
+                $('body,html').animate({scrollTop: 500},1200); return false;
+            });
+            $('.hairstyles').click(function(){
+                $('.price').html('<div class="works" style="height: 800px;">'+
+                '<img class="examples" src="pic/examples/Hairstyles/01.jpg"/>'+
+                '<img class="examples" src="pic/examples/Hairstyles/02.jpg"/>'+
+                '<img class="examples" src="pic/examples/Hairstyles/03.jpg"/>'+
+                '<img class="examples" src="pic/examples/Hairstyles/04.jpg"/>'+
+                '<img class="examples" src="pic/examples/Hairstyles/05.jpg"/>'+
+                '<img class="examples" src="pic/examples/Hairstyles/06.jpg"/>'+
+                '<img class="examples" src="pic/examples/Hairstyles/07.jpg"/>'+
+                '<img class="examples" src="pic/examples/Hairstyles/08.jpg"/>'+
+                '<img class="examples" src="pic/examples/Hairstyles/09.jpg"/>'+
+                '<img class="examples" src="pic/examples/Hairstyles/10.jpg"/>'+
+                '<img class="examples" src="pic/examples/Hairstyles/11.jpg"/>'+
+                '</div>');
+                $('body,html').animate({scrollTop: 500},1200); return false;
             });
             $('.top_button_2').click(function(){
                 $('.price').html("<p style='text-align: center'>Услуги:</p> " +
@@ -91,6 +120,14 @@
                 "<li>Педикюр от 1000 руб.</li>"+
                 "<li></li>"+
                 "</ul>");
+                $('body,html').animate({scrollTop: 500},1200); return false;
+            });
+            $('.top_button_5').click(function(){
+                $('.price').html('<div class="works">'+
+                '<img class="examples" style="height: 600px" src="pic/examples/master1.jpg"/>'+
+
+                '</div>');
+                $('body,html').animate({scrollTop: 500},1200); return false;
             });
 
         </script>
