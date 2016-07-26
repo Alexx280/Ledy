@@ -126,9 +126,10 @@
             });
             $('.top_button_5').click(function(){
                 $('.price').html('<div class="works">'+
-                '<img class="examples" style="height: 600px" src="pic/examples/master1.jpg"/>'+
-
-                '</div>');
+                '<img class="examples" style="height: 450px" src="pic/examples/master1.jpg"/>'+
+                '<div class="me"> Я владею салоном красоты с 2014 года. </div>'+
+                '</div>'+
+                '');
                 $('body,html').animate({scrollTop: 500},1200); return false;
             });
 
