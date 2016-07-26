@@ -13,6 +13,8 @@
     <link rel='stylesheet' type='text/css' href='style.css'/>
     <link rel="shortcut icon" href="png/Scissors1.png" type="image/png">
     <link href='http://fonts.googleapis.com/css?family=Lobster&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet/less' type='text/css' href='learn-less.less'/>
+    <script src="less.js"></script>
 </head>
 <body>
     <div class="head">
