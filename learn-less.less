@@ -1,12 +1,19 @@
 @color: #59271B;
 @font: 20px;
+@border: 2px solid white;
+@radius: 10px;
 
 .me {
   color: @color;
   font-size: @font;
   width: 500px;
   height: 430px;
-  border-radius: 10px;
-  border: 2px solid #ffffff;
+  border-radius: @radius;
+  border: @border;
   padding: 10px;
+}
+
+.my-foto{
+  border: @border;
+  border-radius: @radius;
 }
