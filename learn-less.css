@@ -1,6 +1,9 @@
-.lfdkg {
-  background-color: green;
-}
-.gfds {
-  font-size: 15px;
+.me {
+  color: #59271b;
+  font-size: 20px;
+  width: 500px;
+  height: 430px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  padding: 10px;
 }
