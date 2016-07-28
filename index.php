@@ -1,10 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: busygin
- * Date: 29.06.2016
- * Time: 15:20
- */?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -40,6 +34,7 @@
     <div class="fon">
         <img src="png/fon02.png"/>
     </div>
+    <img id="scissors" src="pic/scissors1.png"/>
     <div class="main">
         <img class="face" src="pic/foto2.jpg"/>
         <div class="named">Леди Ди <br>
@@ -49,7 +44,7 @@
         <!--<div class="adress">Адрес салона: <br> г. Томск, проспект Фрунзе, 129 <br> тел.: 256-296, 8-961-095-6970 </div>-->
         <div class="time">Мы работаем: <br> Понедельник - Пятница: 9:00 - 21:00 <br> Суббота - Воскресенье: 10:00 - 20:00</div>
         <div class="price">
-            <p style="text-align: center">Услуги:</p>
+            <p  style="text-align: center">Услуги:</p>
             <ul>
                 <li>Стрижка женская от 350 руб.</li>
                 <li>Стрижка мужская от 150 руб.</li>
@@ -126,7 +121,7 @@
             });
             $('.top_button_5').click(function(){
                 $('.price').html('<div class="works">'+
-                '<img class="examples" style="height: 450px" src="pic/examples/master1.jpg"/>'+
+                '<img class="examples"  style="height: 450px" src="pic/examples/master1.jpg"/>'+
                 '<div class="me"> Я владею салоном красоты с 2014 года. </div>'+
                 '</div>'+
                 '');
@@ -168,5 +163,38 @@
     $('.button-close').click(function(){
         $('.discount').removeClass('vision');
     });
+
+    var scissors = document.getElementById('scissors');
+        function getCoords(elem) { // кроме IE8-
+            var box = elem.getBoundingClientRect();
+
+            return {
+                top: box.top + pageYOffset,
+                left: box.left + pageXOffset
+            };
+
+        }
+    scissors.onmousedown =(function (e) {
+        var coords = getCoords(scissors);
+        var shiftX = e.pageX - coords.left;
+        var shiftY = e.pageY - coords.top;
+
+        document.body.appendChild(scissors);
+        moveAt(e);
+        function moveAt(e) {
+            scissors.style.left = e.pageX - shiftX + 'px';
+            scissors.style.top = e.pageY - shiftY + 'px';
+        }
+        document.onmousemove = function (e) {
+            moveAt(e);
+        }
+        scissors.onmouseup = function () {
+            document.onmousemove = null;
+            scissors.onmouseup = null;
+        }
+        scissors.ondragstart = function () {
+            return false;
+        }
+    })
 </script>
 </html>

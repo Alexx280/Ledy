@@ -11,3 +11,10 @@
   border: 2px solid white;
   border-radius: 10px;
 }
+#scissors {
+  position: absolute;
+  z-index: 20;
+}
+body {
+  overflow-x: hidden;
+}

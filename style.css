@@ -129,9 +129,10 @@ body{
 }
 
 .price {
-    width: 350px;
+    width: 380px;
     font-weight: bold;
     color: #59271B;
+    transition-duration: 2s;
 }
 .footer {
     text-decoration: none;
