@@ -121,7 +121,7 @@
             });
             $('.top_button_5').click(function(){
                 $('.price').html('<div class="works">'+
-                '<img class="examples"  style="height: 450px" src="pic/examples/master1.jpg"/>'+
+                '<img style="height: 450px; border-radius: 10px" src="pic/examples/master1.jpg"/>'+
                 '<div class="me"> Я владею салоном красоты с 2014 года. </div>'+
                 '</div>'+
                 '');
@@ -159,10 +159,10 @@
     });
     /*$('.manicure').click(function(){
         window.open("works.php", '_self');
-    });*/
+    });
     $('.button-close').click(function(){
         $('.discount').removeClass('vision');
-    });
+    });*/
 
     var scissors = document.getElementById('scissors');
         function getCoords(elem) { // кроме IE8-
@@ -195,6 +195,7 @@
         scissors.ondragstart = function () {
             return false;
         }
-    })
+    });
+
 </script>
 </html>
