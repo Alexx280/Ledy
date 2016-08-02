@@ -122,7 +122,7 @@
             $('.top_button_5').click(function(){
                 $('.price').html('<div class="works">'+
                 '<img style="height: 450px; border-radius: 10px" src="pic/examples/master1.jpg"/>'+
-                '<div class="me"> Я владею салоном красоты с 2014 года. </div>'+
+                '<div class="me"> Салон работает с 2014 г. У нас много постоянных клиентов </div>'+
                 '</div>'+
                 '');
                 $('body,html').animate({scrollTop: 500},1200); return false;
