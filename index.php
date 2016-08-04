@@ -34,7 +34,7 @@
     <div class="fon">
         <img src="png/fon02.png"/>
     </div>
-    <img id="scissors" src="pic/scissors1.png"/>
+    <img id="scissors" src="pic/Scissors1.png"/>
     <div class="main">
         <img class="face" src="pic/foto2.jpg"/>
         <div class="named">Леди Ди <br>
@@ -63,6 +63,7 @@
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=DyJCZRn5MeAN_ZM1e1HeJX96G79l31CK&width=615&height=388&lang=ru_RU&sourceType=constructor&scroll=true"></script>
             <div class="adress">Адрес салона: г. Томск, проспект Фрунзе, 129 <br> тел.: 256-296, 8-961-095-6970 </div>
         </div>
+        <div class="under"></div>
         <script>
             $('.manicure').click(function(){
                 $('.price').html('<div class="works">'+
@@ -120,12 +121,25 @@
                 $('body,html').animate({scrollTop: 500},1200); return false;
             });
             $('.top_button_5').click(function(){
-                $('.price').html('<div class="works">'+
-                '<img style="height: 450px; border-radius: 10px" src="pic/examples/master1.jpg"/>'+
-                '<div class="me"> Салон работает с 2014 г. У нас много постоянных клиентов </div>'+
+                var newWin = window.open("works.php", '_self');
+             /*/*$('.under').html('<div class="about_me" style="position: relative">'+
+                '<img style="height: 450px; border-radius: 10px" src="pic/examples/master1.jpg"/>'+*/
+                /*'<div class="me">' +
+                    '<img class="certificat" src="pic/examples/Certificate/g01.jpg"/>'+
+                    '<img class="certificat" src="pic/examples/Certificate/g02.jpg"/>'+
+                    '<img class="certificat" src="pic/examples/Certificate/g03.jpg"/>'+
+                    '<img class="certificat" src="pic/examples/Certificate/g04.jpg"/>'+
+                    '<img class="certificat" src="pic/examples/Certificate/g05.jpg"/>'+
+                    '<img class="certificat" src="pic/examples/Certificate/g06.jpg"/>'+
+                    '<img class="certificat" src="pic/examples/Certificate/g07.jpg"/>'+
+                    '<img class="certificat" src="pic/examples/Certificate/g08.jpg"/>'+
+                    '<img class="certificat" src="pic/examples/Certificate/v01.jpg"/>'+
+                    '<img class="certificat" src="pic/examples/Certificate/v02.jpg"/>'+
+                    '<img class="certificat" src="pic/examples/Certificate/v03.jpg"/>'+
+                /*'</div>'+
                 '</div>'+
                 '');
-                $('body,html').animate({scrollTop: 500},1200); return false;
+                $('body,html').animate({scrollTop: 1200},1200); return false;*/
             });
 
         </script>
@@ -155,7 +169,7 @@
         $('body,html').animate({scrollTop: 0},800); return false;
     });
     $('.top_button_3').click(function(){
-        $('body,html').animate({scrollTop: 900},800); return false;
+        $('body,html').animate({scrollTop: 850},800); return false;
     });
     /*$('.manicure').click(function(){
         window.open("works.php", '_self');

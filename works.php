@@ -1,18 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: busygin
- * Date: 18.07.2016
- * Time: 15:25
- */
-?>
-<?php
-/**
- * Created by PhpStorm.
- * User: busygin
- * Date: 29.06.2016
- * Time: 15:20
- */?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -21,6 +7,8 @@
     <link rel='stylesheet' type='text/css' href='style.css'/>
     <link rel="shortcut icon" href="png/Scissors1.png" type="image/png">
     <link href='http://fonts.googleapis.com/css?family=Lobster&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet/less' type='text/css' href='learn-less.less'/>
+    <script src="less.js"></script>
 </head>
 <body>
 <div class="head">
@@ -40,14 +28,20 @@
 <div class="fon">
     <img src="png/fon02.png"/>
 </div>
-<div class="main works">
-    <img class="examples" src="pic/examples/Manicure/01.jpg"/>
-    <img class="examples" src="pic/examples/Manicure/02.jpg"/>
-    <img class="examples" src="pic/examples/Manicure/03.jpg"/>
-    <img class="examples" src="pic/examples/Manicure/04.jpg"/>
-    <img class="examples" src="pic/examples/Manicure/05.jpg"/>
-    <img class="examples" src="pic/examples/Manicure/06.jpg"/>
-
+<div class="main">
+    <div class="about_me" style="position: relative">
+            <img class="certificat" src="pic/examples/Certificate/g01.jpg"/>
+            <img class="certificat" src="pic/examples/Certificate/g02.jpg"/>
+            <img class="certificat" src="pic/examples/Certificate/g03.jpg"/>
+            <img class="certificat" src="pic/examples/Certificate/g04.jpg"/>
+            <img class="certificat" src="pic/examples/Certificate/g05.jpg"/>
+            <img class="certificat" src="pic/examples/Certificate/g06.jpg"/>
+            <img class="certificat" src="pic/examples/Certificate/g07.jpg"/>
+            <img class="certificat" src="pic/examples/Certificate/g08.jpg"/>
+            <img class="certificat" src="pic/examples/Certificate/v01.jpg"/>
+            <img class="certificat" src="pic/examples/Certificate/v02.jpg"/>
+            <img class="certificat" src="pic/examples/Certificate/v03.jpg"/>
+        </div>
 
 </div>
 <div class="footer">
@@ -69,9 +63,9 @@
     $('.top_button_3').click(function(){
         /*window.open("index.php", '_self');*/
         var newWin = window.open("index.php", '_self');
-        newWin.onload(function(){newWin.ready(function(){newWin.scrollBy(500,500)})});
+        /* newWin.onload(function(){newWin.ready(function(){newWin.scrollBy(500,500)})});
         newWin.onload(function(){newWin.ready(function(){$('body,html').animate({scrollTop: 500},800); return false;})});
-       /* newWin.ready(function(){newWin.scrollBy(500,500)});
+       newWin.ready(function(){newWin.scrollBy(500,500)});
         newWin.onload(function(){newWin.$('body,html').animate({scrollTop: 500},800); return false;});
         newWin.ready(function(){$('body,html').animate({scrollTop: 500},800); return false;});*/
 
