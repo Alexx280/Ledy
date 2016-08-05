@@ -1,7 +1,276 @@
 @color: #59271B;
+@color1: darken(@color, 50%);
+@color2: lighten(@color, 40%);
+@color-bt: brown;
+@color-bt2: #b8860b;
+@color-in: burlywood;
+@color-main: #E5D4C4;
 @font: 20px;
 @border: 2px solid white;
-@radius: 10px;
+@border-main: 3px solid white;
+@radius: 15px;
+@tb: 125px;
+
+.transit() {
+  transition: 0.5s;
+}
+.transform(@sc) {
+  -webkit-transform: scale(@sc);
+  -ms-transform: scale(@sc);
+  -o-transform: scale(@sc);
+  transform: scale(@sc);
+}
+.lighter() {
+  background: @color - 50%;
+}
+@font-face {
+  font-family: Sa; /* Гарнитура шрифта */
+  src: url(font/ShellyAllegro.ttf); /* Путь к файлу со шрифтом */
+}
+
+* {margin:0;}
+
+
+body{
+  /*background-color: @color;*/
+  background: linear-gradient(@color 0%, @color2 100%);
+  /*.lighter();*/
+  overflow-x: hidden;
+}
+/*главная картинка*/
+.fon img{
+  position: relative;
+  top: 35px;
+  display: block;
+  width: 1000px;
+  height: 266px;
+  margin: 0 auto;
+  .transit;
+}
+/*верхнее поле - меню с кнопками*/
+.head {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  background-color: @color-in;
+  z-index: 10;
+}
+/*Кнопки в верхнем меню*/
+.top_button{
+  position: inherit;
+  height: 35px;
+  width: @tb;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 15px;
+  color: @color-bt;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  &:hover {
+    background-color:@color-main;
+    color:@color-bt2;
+  }
+}
+/*Расположение кнопок меню*/
+.top_button_0{
+  right: @tb * 6;
+}
+.top_button_1{
+  right: @tb * 5;
+}
+.top_button_2{
+  right: @tb * 4;
+}
+.top_button_3{
+  right: @tb * 3;
+}
+.top_button_4{
+  right: @tb * 2;
+  &:hover {
+    .our_work {visibility: visible}
+  }
+}
+.top_button_5{
+  right: @tb * 1;
+}
+.top_button_6{
+  right: @tb * 0;
+}
+/*поле с номером телефона*/
+.tel {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: @tb;
+  font-size: 1.2em;
+    &:hover {
+    .phone {visibility: visible
+    }
+  }
+}
+/*Выпадающее окно с телефоном*/
+.phone {
+  position: relative;
+  top:13px;
+  left: -20px;
+  background-color: @color-in;
+  color: @color-bt;
+  width: 160px;
+  padding-top: 11px;
+  height: 30px;
+  text-align: center;
+  visibility: hidden;
+}
+/*Выпадающее меню на 3 кнопки*/
+.our_work {
+  position: relative;
+  top:17px;
+  right: 0;
+  background-color: @color-in;
+  color: @color-bt;
+  text-align: center;
+  visibility: hidden;
+}
+/*.top_button_4:hover .our_work {visibility: visible}
+
+/*3 нопки выпадающего меню*/
+.we_do {
+  border: solid #ffffff 1px;
+  padding: 20px;
+  width: @tb - 42px;
+}
+/*Главное поле для размещения информации*/
+.main {
+  background-color: @color-main;
+  display: block;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: -60px;
+  border: @border-main;
+  box-shadow: 2px 4px 8px ;
+  border-radius: @radius;
+  .transit;
+  /*Главная картинка*/
+  .face {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 45%;
+    border-radius: @radius;
+    border: @border-main;
+    .transit;
+  }
+}
+@import "http://webfonts.ru/import/andika.css";
+/*
+	Andika, 400
+*/
+
+
+/*Наименование салона*/
+.named {
+  display: inline-block;
+  position: relative;
+  left: 100px;
+  top: -85px;
+  font-size: 85px;
+  font-weight: bold;
+  /*font-family: 'Lobster', arial, serif;*/
+  font-family: Sa;
+  color: darkblue;
+  .transit;
+}
+/*Время работы*/
+.time {
+  display: block;
+  position: relative;
+  top: -85px;
+  left: 495px;
+  border-radius: @radius;
+  border: @border-main;
+  width: 480px;
+  height: 80px;
+  text-align: center;
+  color: @color-bt2;
+  font-weight: bold;
+  font-size: 1.3em;
+  .transit;
+}
+/*Прайс*/
+.price {
+  width: 380px;
+  font-weight: bold;
+  color: @color;
+  transition-duration: 2s;
+}
+/*Карта*/
+.map {
+  position: relative;
+  top: 50px;
+  left: 193px;
+  border: 1px solid @color-bt2;
+  width: 616px;
+  height: 450px;
+}
+/*Адрес под картой*/
+.adress {
+  display: block;
+  position: relative;
+  width: 480px;
+  height: 80px;
+  text-align: center;
+  color: @color-bt2;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 0 auto;
+}
+/*Примеры работ*/
+.works {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 998px;
+  align-content: space-around;
+}
+/*Нижняя веточка*/
+.fon-bottom {
+  position: relative;
+  margin-top: -220px;
+  margin-left: -170px;
+  width: 500px;
+  top:100px;
+}
+/*Правая веточка*/
+.fon-right {
+  display: block;
+  position: relative;
+  margin-top: 0;
+  left: 850px;
+  width: 450px;
+  img {
+    transform: rotate(270deg);
+    width: 80%;
+  }
+}
+
+/*Нижняя часть*/
+.footer {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  text-shadow: black 2px 4px 2px;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
 
 .me {
   color: @color;
@@ -21,9 +290,6 @@
   position: absolute;
   z-index: 8;
 }
-body {
-  overflow-x: hidden;
-}
 
 .about_me {
   height: 850px;
@@ -36,34 +302,60 @@ body {
   width: 998px;
   align-content: space-around;
 }
-.examples {
+.examples, .certificat {
   margin:25px 25px;
   height: 160px;
   border-radius: 10px;
   transition: 0.5s;
   border: 1px solid black;
   box-shadow:  3px 3px 5px rgba(0,0,0,0.9);
+  &:hover {
+    .transform(1.5);
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    border: @border;
+    box-shadow:  17px 17px 7px rgba(0,0,0,0.9);
+  }
+}
 
-}
-.examples:hover {
-  -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
-  transition-timing-function: ease-out;
-  transition-duration: 0.5s;
-  border: 2px solid white;
-  box-shadow:  17px 17px 7px rgba(0,0,0,0.9);
-}
-.certificat {
-  .examples;
+@media screen and (max-width: 1000px){
 
-}
-.certificat:hover {
-  -webkit-transform: scale(2.5);
-  -ms-transform: scale(2.5);
-  transform: scale(2.5);
-  transition-timing-function: ease-out;
-  transition-duration: 0.5s;
-  border: 2px solid white;
-  box-shadow:  17px 17px 7px rgba(0,0,0,0.9);
+  .main {
+    width: 800px;
+    .transit;
+  }
+  .time {
+    width: 370px;
+    left: 405px;
+    .transit;
+  }
+  .named {
+    font-size: 65px;
+    .transit;
+  }
+  .fon img{
+    width: 840px;
+    .transit;
+  }
+  .map{
+    left: 100px;
+    .transit;;
+  }
+  .fon-bottom img{
+    margin-left: 30px;
+    transform: scale(0.7);
+    .transit;;
+  }
+  .fon-right{
+    left: 600px;
+    transform: scale(0.7);
+    .transit;
+  }
+  .tel{
+    visibility: hidden;
+  }
+  .works{
+    width: 798px;
+    transition: 1s;
+  }
 }

@@ -1,46 +1,11 @@
-* {margin:0;}
+
 @font-face {
     font-family: Sa; /* Гарнитура шрифта */
     src: url(font/ShellyAllegro.ttf); /* Путь к файлу со шрифтом */
 }
+/*todo удалить этот файл*/
 
-body{
-    background-color: #59271B;
-    /*background-image: url("pic/bg5.jpg");*/
-}
-.fon img{
-    position: relative;
-    top: 35px;
-    display: block;
-    width: 1000px;
-    height: 266px;
-    margin: 0 auto;
-    transition: 0.5s;
-}
-.head {
-    position: fixed;
-    top: 0;
-    display: block;
-    width: 100%;
-    height: 50px;
-    margin: 0 auto;
-    background-color: burlywood;
-    z-index: 10;
-}
-.top_button{
-    position: inherit;
-    height: 35px;
-    width: 150px;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 15px;
-    color: brown;
-    font-weight: bold;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-}
-.top_button_1{
+/*.top_button_1{
     left: calc(100% - 750px);
 }
 .top_button_2{
@@ -65,16 +30,7 @@ body{
     width: 170px;
     font-size: 1.2em;
 }
-.phone {
-    position: relative;
-    top:13px;
-    left: -20px;
-    background-color: #B4944B;
-    color: darkblue;
-    width: 205px;
-    text-align: center;
-    visibility: hidden;
-}
+
 
 .tel:hover .phone {visibility: visible}
 
@@ -107,7 +63,7 @@ body{
     top: -85px;
     font-size: 85px;
     font-weight: bold;
-    /*font-family: 'Lobster', arial, serif;*/
+    /*font-family: 'Lobster', arial, serif;
     font-family: Sa;
     color: darkblue;
     transition: 0.5s;
@@ -144,7 +100,7 @@ body{
 .footer a{
     text-decoration: none;
     color: white;
-}
+
 .map {
     position: relative;
     top: 50px;
@@ -153,7 +109,7 @@ body{
     width: 616px;
     height: 450px;
 
-}
+}}
 .adress {
     display: block;
     position: relative;
@@ -202,7 +158,7 @@ body{
     border: 2px solid white;
     box-shadow:  17px 17px 7px rgba(0,0,0,0.9);
 }
-*/
+
 .works {
      height: 500px;
      display: flex;
@@ -212,77 +168,42 @@ body{
      width: 998px;
      align-content: space-around;
  }
-.our_work {
-    position: relative;
-    top:17px;
-    left: calc(100% - 150px);
-    background-color: burlywood;
-    color: brown;
-
-    text-align: center;
-    visibility: hidden;
-
-}
-.top_button_4:hover .our_work {visibility: visible}
-
-.we_do {
-
-    border: solid #ffffff 1px;
-    padding: 20px;
-    width: 108px;
-}
+/*
 @media screen and (max-width: 1000px){
     .main {
         width: 800px;
         transition: 0.5s;
     }
-}
-@media screen and (max-width: 1000px){
     .time {
         width: 370px;
         left: 405px;
         transition: 0.5s;
     }
-}
-@media screen and (max-width: 1000px){
     .named {
         font-size: 65px;
         transition: 0.5s;
     }
-}
-@media screen and (max-width: 1000px){
     .fon img{
         width: 840px;
         transition: 0.5s;
     }
-}
-@media screen and (max-width: 1000px){
     .map{
         left: 100px;
         transition: 0.5s;
     }
-}
-@media screen and (max-width: 1000px){
     .fon-bottom img{
         margin-left: 30px;
         transform: scale(0.7);
         transition: 0.5s;
     }
-}
-@media screen and (max-width: 1000px){
     .fon-right{
         left: 600px;
         transform: scale(0.7);
         transition: 0.5s;
     }
-}
-@media screen and (max-width: 1000px){
     .tel{
-        display: none;
-        transition: 1s;
+        visibility: hidden;
     }
-}
-@media screen and (max-width: 1000px){
     .works{
         width: 798px;
         transition: 1s;
