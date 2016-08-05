@@ -9,16 +9,15 @@
     <link href='http://fonts.googleapis.com/css?family=Lobster&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     <link rel='stylesheet/less' type='text/css' href='learn-less.less'/>
     <script src="less.js"></script>
+
 </head>
 <body>
     <div class="head">
-        <div class="top_button tel">8-923-457-15-08
-            <div class="phone">
-                тел.: 256-296, <br> 8-961-095-6970
-            </div>
+        <div class="top_button tel">тел.: 256-296
+            <div class="phone"> 8-961-095-6970</div>
         </div>
-
-        <div class="top_button top_button_1">Главная</div>
+        <div class="top_button top_button_0">Главная</div>
+        <div class="top_button top_button_1">Акции</div>
         <div class="top_button top_button_2">Услуги</div>
         <div class="top_button top_button_3">Адрес</div>
         <div class="top_button top_button_4">Наши работы
@@ -29,6 +28,7 @@
             </div>
         </div>
         <div class="top_button top_button_5">О Нас</div>
+        <div class="top_button top_button_6">Отзывы</div>
     </div>
 
     <div class="fon">
@@ -42,7 +42,7 @@
         </div>
         <!--<div class="named salon">Салон красоты</div>
         <!--<div class="adress">Адрес салона: <br> г. Томск, проспект Фрунзе, 129 <br> тел.: 256-296, 8-961-095-6970 </div>-->
-        <div class="time">Мы работаем: <br> Понедельник - Пятница: 9:00 - 21:00 <br> Суббота - Воскресенье: 10:00 - 20:00</div>
+        <div class="time">Мы работаем: <br> Каждый день: 10:00 - 20:00</div>
         <div class="price">
             <p  style="text-align: center">Услуги:</p>
             <ul>
@@ -162,7 +162,7 @@
 </body>
 
 <script>
-    $('.top_button_1').click(function(){
+    $('.top_button_0').click(function(){
         $('body,html').animate({scrollTop: 0},800); return false;
     });
     $('.glav').click(function(){
