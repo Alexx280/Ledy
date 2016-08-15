@@ -1,4 +1,5 @@
 @color: #59271B;
+@color0: #722A07;
 @color1: darken(@color, 50%);
 @color2: lighten(@color, 40%);
 @color-bt: brown;
@@ -11,8 +12,8 @@
 @radius: 15px;
 @tb: 125px;
 
-.transit() {
-  transition: 0.5s;
+.transit(@time: 0.7s) {
+  transition: @time;
 }
 .transform(@sc) {
   -webkit-transform: scale(@sc);
@@ -32,8 +33,8 @@
 
 
 body{
-  /*background-color: @color;*/
-  background: linear-gradient(@color 0%, @color2 100%);
+  background-color: @color0;
+  /*background: linear-gradient(@color 0%, @color2 100%);*/
   /*.lighter();*/
   overflow-x: hidden;
 }
@@ -147,7 +148,7 @@ body{
 .main {
   background-color: @color-main;
   display: block;
-  width: 1000px;
+  width: 1050px;
   margin: 0 auto;
   margin-top: -60px;
   border: @border-main;
@@ -189,23 +190,34 @@ body{
   display: block;
   position: relative;
   top: -85px;
-  left: 495px;
+  left: 525px;
   border-radius: @radius;
   border: @border-main;
   width: 480px;
-  height: 80px;
+  height: 60px;
   text-align: center;
   color: @color-bt2;
   font-weight: bold;
   font-size: 1.3em;
+  padding: 10px;
   .transit;
 }
 /*Прайс*/
 .price {
-  width: 380px;
+  background-image: url('png/script.png');
+  background-repeat: no-repeat;
+  position: relative;
+  width: 500px;
+  height: 307px;
+  font-size: 22px;
+  text-shadow: 2px 2px 1px black;
   font-weight: bold;
-  color: @color;
-  transition-duration: 2s;
+  color: navajowhite;
+  transition-duration: 0.2s;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 100px;
+
 }
 /*Карта*/
 .map {
@@ -230,6 +242,7 @@ body{
 }
 /*Примеры работ*/
 .works {
+  padding-top: 50px;
   height: 500px;
   display: flex;
   flex-direction: row;
@@ -237,6 +250,7 @@ body{
   justify-content: space-around;
   width: 998px;
   align-content: space-around;
+  .transit;
 }
 /*Нижняя веточка*/
 .fon-bottom {
@@ -301,6 +315,7 @@ body{
   justify-content: space-around;
   width: 998px;
   align-content: space-around;
+  .transit(0.9s)
 }
 .examples, .certificat {
   margin:25px 25px;
@@ -310,7 +325,7 @@ body{
   border: 1px solid black;
   box-shadow:  3px 3px 5px rgba(0,0,0,0.9);
   &:hover {
-    .transform(1.5);
+    .transform(2);
     transition-timing-function: ease-out;
     transition-duration: 0.5s;
     border: @border;
@@ -318,13 +333,24 @@ body{
   }
 }
 
-@media screen and (max-width: 1000px){
+.certificat {
+  &:hover {
+    .transform(2.4);}
+}
+
+.c1 {
+  &:hover {
+    .transform(3);}
+}
+
+@media screen and (max-width: 1100px){
 
   .main {
     width: 800px;
     .transit;
   }
   .time {
+
     width: 370px;
     left: 405px;
     .transit;
@@ -339,7 +365,7 @@ body{
   }
   .map{
     left: 100px;
-    .transit;;
+    .transit;
   }
   .fon-bottom img{
     margin-left: 30px;
@@ -356,6 +382,21 @@ body{
   }
   .works{
     width: 798px;
-    transition: 1s;
+    .transit(0.5s);
+  }
+  .about_me {
+    width: 798px;
+    height: 950px;
+    .transit(0.5s);
+  }
+
+  .certificat {
+    &:hover {
+      .transform(2);}
+  }
+
+  .c1 {
+    &:hover {
+      .transform(2.5);}
   }
 }

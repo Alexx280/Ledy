@@ -4,6 +4,8 @@
     <option name="myLocal" value="true" />
     <inspection_tool class="FileHeaderInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="MissingSinceTagDocInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PhpDeprecationInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PhpInternalEntityUsedInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="TodoComment" enabled="true" level="WARNING" enabled_by_default="true" />
   </profile>
 </component>
