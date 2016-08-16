@@ -12,7 +12,7 @@
 @radius: 15px;
 @tb: 125px;
 
-.transit(@time: 0.7s) {
+.transit(@time: 0.0s) {
   transition: @time;
 }
 .transform(@sc) {
@@ -33,9 +33,11 @@
 
 
 body{
-  background-color: @color0;
-  /*background: linear-gradient(@color 0%, @color2 100%);*/
+  /*background-color: @color0;
+  background: linear-gradient(@color 0%, @color2 100%);*/
   /*.lighter();*/
+  background-image: url('pic/fon.jpg') ;
+  background-repeat: repeat;
   overflow-x: hidden;
 }
 /*главная картинка*/
@@ -56,7 +58,10 @@ body{
   width: 100%;
   height: 50px;
   margin: 0 auto;
-  background-color: @color-in;
+  /*background-color: @color-in;*/
+  background-image: url('pic/yellow.jpg') ;
+  background-repeat: repeat;
+  box-shadow: 8px 8px 8px ;
   z-index: 10;
 }
 /*Кнопки в верхнем меню*/
@@ -73,8 +78,10 @@ body{
   cursor: pointer;
   font-family: Arial, sans-serif;
   &:hover {
-    background-color:@color-main;
-    color:@color-bt2;
+    /*background-color:@color-main;*/
+    background-image: url('pic/yellow1.jpg') ;
+    color:white;
+    text-shadow: 1px 1px 1px black;
   }
 }
 /*Расположение кнопок меню*/
@@ -109,7 +116,9 @@ body{
   width: @tb;
   font-size: 1.2em;
     &:hover {
-    .phone {visibility: visible
+    .phone {
+      visibility: visible;
+
     }
   }
 }
@@ -118,23 +127,31 @@ body{
   position: relative;
   top:13px;
   left: -20px;
-  background-color: @color-in;
-  color: @color-bt;
+  /*background-color: @color-in;
+  color: @color-bt;*/
   width: 160px;
   padding-top: 11px;
   height: 30px;
   text-align: center;
   visibility: hidden;
+  background-image: url('pic/yellow1.jpg') ;
+  color:white;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 8px 8px 8px black;
 }
 /*Выпадающее меню на 3 кнопки*/
 .our_work {
   position: relative;
   top:17px;
   right: 0;
-  background-color: @color-in;
-  color: @color-bt;
+  /*background-color: @color-in;
+  color: @color-bt;*/
+  background-image: url('pic/yellow1.jpg') ;
+  color:white;
+  text-shadow: 1px 1px 1px black;
   text-align: center;
   visibility: hidden;
+  box-shadow: 8px 8px 8px black;
 }
 /*.top_button_4:hover .our_work {visibility: visible}
 
@@ -146,13 +163,15 @@ body{
 }
 /*Главное поле для размещения информации*/
 .main {
-  background-color: @color-main;
+  background-image: url('pic/pergament.jpg') ;
+  background-repeat: repeat;
+  /*background-color: @color-main;*/
   display: block;
   width: 1050px;
   margin: 0 auto;
   margin-top: -60px;
   border: @border-main;
-  box-shadow: 2px 4px 8px ;
+  box-shadow: 8px 8px 8px ;
   border-radius: @radius;
   .transit;
   /*Главная картинка*/
@@ -196,10 +215,11 @@ body{
   width: 480px;
   height: 60px;
   text-align: center;
-  color: @color-bt2;
+  color: @color;
   font-weight: bold;
   font-size: 1.3em;
   padding: 10px;
+
   .transit;
 }
 /*Прайс*/
@@ -210,14 +230,20 @@ body{
   width: 500px;
   height: 307px;
   font-size: 22px;
-  text-shadow: 2px 2px 1px black;
+  text-shadow: 3px 3px 2px black;
   font-weight: bold;
-  color: navajowhite;
+  color: white;
+  /*color: navajowhite;*/
   transition-duration: 0.2s;
   margin: 0 auto;
   margin-top: 50px;
   padding: 100px;
 
+}
+.say {
+  .price;
+  /*background-image: url('pic/pergament.jpg') ;
+  background-repeat: repeat;*/
 }
 /*Карта*/
 .map {
@@ -235,7 +261,7 @@ body{
   width: 480px;
   height: 80px;
   text-align: center;
-  color: @color-bt2;
+  color: @color;
   font-weight: bold;
   font-size: 1.3em;
   margin: 0 auto;
