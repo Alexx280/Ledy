@@ -7,7 +7,8 @@
 </div>
 </div>
 <div class="footer">
-    &copy; Разработка и поддержка сайта <a href="http://alexeybusygin.ru" style="text-decoration: none; color: #ffffff">Бусыгин Алексей <img src="pic/Contact-16.png"/></a>
+    <!--&copy; Разработка и поддержка сайта <a href="http://alexeybusygin.ru" style="text-decoration: none; color: #ffffff">Бусыгин Алексей <img src="pic/Contact-16.png"/></a>-->
+    &copy; Разработка и поддержка сайта Бусыгин Алексей <img src="pic/Contact-16.png"/> 8-953-920-4705
 </div>
 <a href="see.php"><div class="see"></div></a>
 
